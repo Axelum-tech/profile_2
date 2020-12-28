@@ -1,0 +1,146 @@
+body{
+    color: white;
+    background-color: #333333;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+
+.contacts ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.contacts li{
+    display: table;
+    padding: 0.25em;
+}
+
+.contacts li > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.contacts .avatar img{
+    height: 3em;
+
+}
+.contacts .avatar{
+    margin: 0;
+    padding-right: 1em;
+    padding-left: 1em;
+    }
+
+.contacts .avatar .status{
+    width: 0.5em;
+    height: 0.5em;
+    display: inline-block;
+    border-radius: 100%;
+    margin-left:-1em;
+
+}
+.contacts .info > span{
+    display: table-row;
+
+}
+
+
+    .status.on{
+    border: 1px solid greenyellow;
+    background-color:green;
+
+}
+    .status.off{
+    border: 1px solid #777;
+    background-color: #444;
+}
+
+.contacts .info{
+    display: table-cell;
+}
+.contacts .action .add{
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: #111;
+    display: block;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 2em;
+}
+
+.contacts .action{
+    padding:0 3em;
+
+
+}
+
+.contacts .action a.add:hover{
+    background-color: #151515;
+    color: skyblue;
+}
+.contacts .more>a:hover{
+    
+    color: skyblue;
+}
+
+.contacts .add_details > div {
+
+    /* background-color: white; */
+    width: 0;
+    transition: 1.5s;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-decoration: none;
+}
+.contacts #contact_1:target .add_details>div{
+    /* display: table-cell; */
+    /* opacity: 1; */
+    width: 100%;
+}
+.contacts #contact_1:target >*{
+    transform: translateX(-10em);
+    transition: 1s;
+}
+
+.contacts a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    padding: 0em 0.25em 0em 0.25em;
+
+} 
+
+.contacts a:hover{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: skyblue;
+} 
+
+
+.contacts .more>a{
+    color: whitesmoke;
+}
+.contacts .more_details .options>a{
+    text-decoration: none;
+}
+
+
+.contacts .more_details>div{
+    width: 0; 
+  
+    overflow: hidden;
+    white-space: nowrap;
+    text-decoration: none;
+    transition:1s
+}
+
+.contacts #contact_n:target+#contact_1 .more_details>div{
+width: 250px ;
+transition: 1s;
+}
+
+
+
